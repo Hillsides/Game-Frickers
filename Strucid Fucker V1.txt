@@ -1,0 +1,73 @@
+-- Made by hillsides#1305
+-- If errors occur, dm hillsides#1305
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local main = Instance.new("Frame")
+local title = Instance.new("TextLabel")
+local owl = Instance.new("TextButton")
+local bork = Instance.new("TextButton")
+local made = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+
+main.Name = "main"
+main.Parent = ScreenGui
+main.BackgroundColor3 = Color3.fromRGB(149, 254, 255)
+main.BorderSizePixel = 5
+main.Position = UDim2.new(0.167487681, 0, 0.403747857, 0)
+main.Size = UDim2.new(0, 467, 0, 273)
+main.Active = true
+main.Draggable = true
+
+title.Name = "title"
+title.Parent = main
+title.BackgroundColor3 = Color3.fromRGB(255, 247, 0)
+title.BorderSizePixel = 5
+title.Size = UDim2.new(0, 467, 0, 50)
+title.Font = Enum.Font.GothamBold
+title.Text = "Strucid Fucker V1"
+title.TextColor3 = Color3.fromRGB(0, 0, 0)
+title.TextSize = 14.000
+
+owl.Name = "owl"
+owl.Parent = main
+owl.BackgroundColor3 = Color3.fromRGB(255, 177, 21)
+owl.BorderSizePixel = 5
+owl.Position = UDim2.new(0.0513918623, 0, 0.582417607, 0)
+owl.Size = UDim2.new(0, 151, 0, 50)
+owl.Font = Enum.Font.GothamBlack
+owl.Text = "Owl Hub"
+owl.TextColor3 = Color3.fromRGB(0, 0, 0)
+owl.TextSize = 14.000
+owl.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
+end)
+
+bork.Name = "bork"
+bork.Parent = main
+bork.BackgroundColor3 = Color3.fromRGB(55, 255, 135)
+bork.BorderSizePixel = 5
+bork.Position = UDim2.new(0.591006398, 0, 0.582417607, 0)
+bork.Size = UDim2.new(0, 151, 0, 50)
+bork.Font = Enum.Font.GothamBlack
+bork.Text = "BorkHub"
+bork.TextColor3 = Color3.fromRGB(0, 0, 0)
+bork.TextSize = 14.000
+bork.MouseButton1Down:connect(function()
+loadstring(game:HttpGet(('https://pastebin.com/raw/beAjJipW'),true))()
+end)
+
+
+made.Name = "made"
+made.Parent = main
+made.BackgroundColor3 = Color3.fromRGB(205, 201, 255)
+made.BorderSizePixel = 5
+made.Position = UDim2.new(0.284796566, 0, 0.241758242, 0)
+made.Size = UDim2.new(0, 200, 0, 50)
+made.Font = Enum.Font.GothamSemibold
+made.Text = "Made by hillsides#1305"
+made.TextColor3 = Color3.fromRGB(0, 0, 0)
+made.TextSize = 14.000
