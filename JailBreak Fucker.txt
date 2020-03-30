@@ -1,0 +1,82 @@
+-- Made by boomer#6365
+
+
+-- Instances:
+
+local main = Instance.new("ScreenGui")
+local frame = Instance.new("Frame")
+local title = Instance.new("Frame")
+local titletext = Instance.new("TextLabel")
+local autorob = Instance.new("TextButton")
+local moon = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
+
+--Properties:
+
+main.Name = "main"
+main.Parent = game.CoreGui
+
+frame.Name = "frame"
+frame.Parent = main
+frame.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+frame.BorderSizePixel = 0
+frame.Position = UDim2.new(0.109498665, 0, 0.235127479, 0)
+frame.Size = UDim2.new(0, 202, 0, 229)
+frame.Active = true
+frame.Draggable = true
+
+title.Name = "title"
+title.Parent = frame
+title.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+title.Size = UDim2.new(0, 202, 0, 36)
+
+titletext.Name = "titletext"
+titletext.Parent = title
+titletext.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+titletext.Size = UDim2.new(0, 202, 0, 36)
+titletext.Font = Enum.Font.SourceSansBold
+titletext.Text = "JailBreak Fucker"
+titletext.TextColor3 = Color3.fromRGB(209, 24, 0)
+titletext.TextSize = 20.000
+
+autorob.Name = "autorob"
+autorob.Parent = frame
+autorob.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+autorob.BorderColor3 = Color3.fromRGB(45, 161, 223)
+autorob.Position = UDim2.new(0.0495051034, 0, 0.21397379, 0)
+autorob.Size = UDim2.new(0, 90, 0, 36)
+autorob.Font = Enum.Font.GothamBold
+autorob.Text = "AutoRob"
+autorob.TextColor3 = Color3.fromRGB(69, 214, 134)
+autorob.TextSize = 20.000
+autorob.TextWrapped = true
+autorob.MouseButton1Down:connect(function()
+loadstring(game:GetObjects("rbxassetid://1461971147")[1].Source)()
+end)
+
+moon.Name = "moon"
+moon.Parent = frame
+moon.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+moon.BorderColor3 = Color3.fromRGB(80, 158, 182)
+moon.Position = UDim2.new(0.53465271, 0, 0.213973805, 0)
+moon.Size = UDim2.new(0, 87, 0, 36)
+moon.Font = Enum.Font.GothamBold
+moon.Text = "MoonHub"
+moon.TextColor3 = Color3.fromRGB(59, 206, 137)
+moon.TextSize = 20.000
+moon.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://m00n.pw"))()
+end)
+
+
+TextLabel.Parent = frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+TextLabel.Position = UDim2.new(0.00495049404, 0, 0.781659365, 0)
+TextLabel.Size = UDim2.new(0, 200, 0, 50)
+TextLabel.Font = Enum.Font.Gotham
+TextLabel.Text = "This Fucker will be updated frequently due to recent JailBreak Security. Check Game-Frickers github for updates."
+TextLabel.TextColor3 = Color3.fromRGB(39, 134, 193)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
