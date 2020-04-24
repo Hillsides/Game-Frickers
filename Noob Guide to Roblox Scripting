@@ -1,0 +1,57 @@
+--[[
+This is a tutorial by Dogey#9999, this is a simple tutorial for noobs that can't learn shit at all. 
+I'm gonna be teaching the most basic roblox lua logic ever. 
+Example: How to use a RS, how to make loops. I have many simple tutorial's, I can make this an auto-updater tutorial. 
+For the first log of this simple roblox lua tutorial, I will teach you guys how to use a remotespy for a simulator. 
+I will include an auto-sell and auto-farm. 
+I hope this tutorial doesn't get skidded. This is the legit worst tutorial but, I hope it helps some noobs. 
+I'm going to put my RS down here as local RS. 
+Now, on with the tutorial.
+]]
+local RS = loadstring(game:HttpGet('https://raw.githubusercontent.com/Hillsides/Game-Frickers/master/R2S_V2_V3.lua'))() -- Run this with your exploit. 
+
+-- Now, get a shitty simulator. Do something that fills your inventory, example: blow a bubble in bubble gum simulator. 
+-- Doing that will fire a remote event. 
+--A remote event should look like this
+local event = [[local A_1 = "BlowBubble"
+local Event = game:GetService("ReplicatedStorage").NetworkRemoteEvent
+Event:FireServer(A_1)
+]]
+-- Remove the [[]] obviously. 
+
+-- We now need a loop for auto-farm
+
+_G.AutoFarm = true 
+while _G.AutoFarm do 
+wait() -- If we don't have a wait, our game will crash. 
+local A_1 = "BlowBubble"
+local Event = game:GetService("ReplicatedStorage").NetworkRemoteEvent -- The event
+Event:FireServer(A_1)
+wait() -- Another wait at the end
+end -- we have to add an end to end the script, on certain occasions, you might have to add 2. 
+
+-- Now, we will add an auto sell, this will be a bit different. You should use DEX to find the sell circle. 
+-- Find the location of the autosell and boom. Just do what I'm doing in this one here.
+-- Some simulator's will have a location for the sell but, in this example, sell is a event. 
+-- Bubble Gum Simualtor has a location detect for the sell, therefore I can't fire the remote of the sell and expect a sell of my bubbles. 
+_G.AutoSell = true
+while _G.AutoSell do 
+wait(5)
+for i, v in pairs(game:GetService("Workspace").Activations.Sell:GetChildren()) do 
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame 
+wait(1)
+end
+end
+
+-- There we have it, an auto-farm with auto sell. 
+-- We can spice it up with some auto pickup coins. 
+-- Sadly, Bubble Gum Sim is so shitty they don't have a folder for coins that is organized. Therefore, I can't make a good coin pickup. 
+
+--With that being said, that's the tutorial on how to use a remote spy. 
+-- This will be auto-updated every week or day. 
+-- If you want to speak with me, add me on discord, Dogey#9999 or join Kermit's Hub Discord, https://discord.gg/tErTvx2. 
+-- Goodbye. 
+
+
+
+-- If you read this far, next tutorial will be on how to use variables and other simple things
